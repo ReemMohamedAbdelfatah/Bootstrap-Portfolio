@@ -13,28 +13,81 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="#navbar-example" class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        
-      <div class="col-9 navbar-left nav-item ">
-        <a href="#" class="nav-link">Logo</a>
+        <div class="col-9 navbar-left nav-item">
+          <a href="#" class="nav-link">Logo</a>
+        </div>
+        <ul class="nav navbar-right col-3">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Portfolio</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#scrollspyHeading1">Project1</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading2">Project2</a></li>
+              
+              <li><a class="dropdown-item" href="#scrollspyHeading3">Project3</a></li>
+              <li><hr class="dropdown-divider"></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading4">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading5">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading5"><img src="/images/mailicon.svg" /></a>
+          </li>
+        </ul>
       </div>
-      <ul class="nav navbar-right col-3">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><img src="/images/mailicon.svg" /></a>
-        </li>
-      </ul>
-    </div>
     </nav>
+<div class="col-3"></div>
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example"
+      data-bs-offset="0"
+      class="scrollspy-example col-6"
+      tabindex="0"
+    >
+      <h4 id="scrollspyHeading1">First heading</h4>
+      <div class="card" style="width: 18rem">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <h4 id="scrollspyHeading2">Second heading</h4>
+      <div class="card" style="width: 18rem">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <h4 id="scrollspyHeading3">Third heading</h4>
+      <div class="card" style="width: 18rem">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-3"></div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
